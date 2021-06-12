@@ -1,10 +1,10 @@
-# web-container
+# container-compose
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 <img height="100px" src="./docs/assets/logo.png">
 
-The [`web-container`](https://github.com/augejs/augejs.github.io) is one of micro-frontend solutions on top of Web Virtualization.
+The [`container-compose`](https://github.com/augejs/augejs.github.io) is one of micro-frontend solutions on top of Web Virtualization.
 
 :star2: Star us on GitHub — it helps! :clap:
 
@@ -12,7 +12,7 @@ https://github.wdf.sap.corp/xweb/web-container
 
 ## Table of Contents
 
-- [web-container](#web-container)
+- [container-compose](#web-container)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Background](#background)

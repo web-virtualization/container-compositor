@@ -28,3 +28,5 @@ yarn-error.log*
 dist
 
 storybook-static
+
+public/container-compositor.js

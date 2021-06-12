@@ -6,6 +6,7 @@ const { createServer } = require('http');
 const isProd = process.env.NODE_ENV === 'production';
 const serverPort = process.env.PORT || 5003;
 const serveHandler = require('serve-handler');
+const outputName = pkg.name.split("/")[1];
 
 const buildOpts = {
   entryPoints: [
@@ -23,7 +24,7 @@ const buildOpts = {
   },
   tsconfig: './tsconfig.json',
   globalName: '',
-  outfile: `./${isProd ? 'dist' : 'public'}/web-container${isProd ? '-v' + pkg.version : ''}${isProd ? '-min' : ''}.js`,
+  outfile: `./${isProd ? 'dist' : 'public'}/${outputName}${isProd ? '-v' + pkg.version : ''}${isProd ? '-min' : ''}.js`,
   resolveExtensions: ['.ts'],
   target: ["es2018"]
 };
