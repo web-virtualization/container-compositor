@@ -1,2 +1,2 @@
 import './components/FlexLayout';
-import './components/ContainerCompositor';
+import './ContainerCompositor';

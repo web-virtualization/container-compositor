@@ -23,6 +23,9 @@
     "url": "https://github.com/web-virtualization/container-compositor/issues"
   },
   "homepage": "https://github.com/web-virtualization/container-compositor#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "lit": "^2.0.0-rc.2"
   },

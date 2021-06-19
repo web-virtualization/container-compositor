@@ -8,11 +8,12 @@ interface UISchema {
 
 interface PageSchema {
   ver: string,
+  title?: string | null,
   envVariables?: Record<string, string>,
   ui?: UISchema,
 }
 
-export function getPageSchema(): PageSchema | null {
+export async function getPageSchema(): Promise<PageSchema | null> {
   let pageSchema: PageSchema | null = null;
   if ((window as unknown as Record<string, unknown>).pageSchema) {
     pageSchema = (window as unknown as Record<string, unknown>).pageSchema as PageSchema;
@@ -66,3 +67,10 @@ export function createEnvVariables(pageSchema: PageSchema | null): void {
     }
   }
 }
+
+export function createDocumentTitle(pageSchema: PageSchema | null): void {
+  if (!pageSchema?.title) return;
+  document.title = pageSchema.title;
+}
+
+

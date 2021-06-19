@@ -24,7 +24,7 @@ const buildOpts = {
   },
   tsconfig: './tsconfig.json',
   globalName: '',
-  outfile: `./${isProd ? 'dist' : 'public'}/${outputName}${isProd ? '-v' + pkg.version : ''}${isProd ? '-min' : ''}.js`,
+  outfile: `./${isProd ? 'dist' : 'public'}/${outputName}${isProd ? '.min' : ''}.js`,
   resolveExtensions: ['.ts'],
   target: ["es2018"]
 };
